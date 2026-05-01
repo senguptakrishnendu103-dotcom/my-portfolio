@@ -93,3 +93,20 @@
     order: -1; /* Put image on top on mobile */
   }
 }
+
+@media (max-width: 768px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image-container {
+    width: 250px;
+    height: 250px;
+  }
+}

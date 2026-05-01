@@ -87,4 +87,12 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
 }

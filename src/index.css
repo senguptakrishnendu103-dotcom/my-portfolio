@@ -85,12 +85,12 @@ a:hover {
 }
 
 .heading-xl {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 8vw, 5rem);
   letter-spacing: -0.02em;
 }
 
 .heading-lg {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 3rem);
   margin-bottom: 2rem;
 }
 
@@ -145,4 +145,10 @@ a:hover {
   height: 30vw;
   bottom: 0vw;
   right: -5vw;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
 }

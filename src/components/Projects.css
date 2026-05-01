@@ -36,6 +36,8 @@
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .project-tech {
@@ -95,4 +97,10 @@
   text-align: center;
   padding: 4rem 2rem;
   color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem;
+  }
 }

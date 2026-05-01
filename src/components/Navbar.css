@@ -94,7 +94,11 @@
 }
 
 @media (max-width: 768px) {
-.desktop-nav {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .desktop-nav {
     display: none;
   }
 
@@ -113,11 +117,14 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 2rem;
-    right: 2rem;
+    left: 1rem;
+    right: 1rem;
     padding: 1.5rem;
     gap: 1.5rem;
     align-items: center;
     border-radius: 12px;
+    background: var(--bg-primary);
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 }

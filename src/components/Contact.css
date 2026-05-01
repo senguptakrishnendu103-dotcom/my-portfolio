@@ -117,4 +117,8 @@
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-form-container {
+    padding: 1.5rem;
+  }
 }
