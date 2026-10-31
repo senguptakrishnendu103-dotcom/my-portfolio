@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Research from './components/Research';
 import Projects from './components/Projects';
+import Achievements from './components/Achievements';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import AdminPanel from './components/AdminPanel';
 import './App.css';
 
@@ -16,10 +19,13 @@ function Portfolio({ theme, toggleTheme }) {
       <main>
         <Hero />
         <About />
+        <Research />
         <Projects />
+        <Achievements />
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

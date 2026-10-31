@@ -1,87 +1,150 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, Moon, Sun, Sparkles, FileText } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import './Navbar.css';
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const { name } = portfolioData.personal;
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 40);
+
+      const sections = ['home', 'about', 'research', 'projects', 'achievements', 'experience', 'contact'];
+      const scrollPos = window.scrollY + 120;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sections[i]);
+        if (el && el.offsetTop <= scrollPos) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '#home', id: 'home' },
+    { name: 'About', href: '#about', id: 'about' },
+    { name: 'Research', href: '#research', id: 'research', highlight: true },
+    { name: 'Projects', href: '#projects', id: 'projects' },
+    { name: 'Achievements', href: '#achievements', id: 'achievements' },
+    { name: 'Journey', href: '#experience', id: 'experience' },
+    { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled glass-panel' : ''}`}>
+    <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <a 
           href="#home" 
           className="logo"
+          title="Double-click to access admin panel"
           onDoubleClick={(e) => { e.preventDefault(); window.location.href = '/admin'; }}
         >
-          {name.split(' ')[0]}<span className="text-gradient">.</span>
+          <span className="logo-symbol">&lt;</span>
+          <span className="logo-text">{name.split(' ')[0]}</span>
+          <span className="logo-dot">.</span>
+          <span className="logo-symbol">/&gt;</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="nav-links desktop-nav">
-          {navLinks.map((link, index) => (
-            <a key={index} href={link.href} className="nav-link">
-              {link.name}
+        <nav className="nav-links desktop-nav" aria-label="Main Navigation">
+          {navLinks.map((link) => (
+            <a 
+              key={link.id} 
+              href={link.href} 
+              className={`nav-link ${activeSection === link.id ? 'active' : ''} ${link.highlight ? 'nav-link-research' : ''}`}
+            >
+              {link.highlight && <Sparkles size={13} className="research-sparkle" />}
+              <span>{link.name}</span>
             </a>
           ))}
-          <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-        </div>
 
-        {/* Mobile Toggle */}
-        <div className="mobile-controls">
-          <button onClick={toggleTheme} className="theme-toggle mobile-theme-toggle" aria-label="Toggle theme">
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-          <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Nav */}
-        {isOpen && (
-          <motion.div 
-            className="mobile-nav glass-panel"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="btn btn-sm btn-secondary nav-resume-btn"
+            title="View Resume PDF"
           >
-            {navLinks.map((link, index) => (
+            <FileText size={14} />
+            <span>Resume</span>
+          </a>
+          
+          <button 
+            onClick={toggleTheme} 
+            className="theme-toggle" 
+            aria-label="Toggle theme"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          >
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </nav>
+
+        {/* Mobile Controls */}
+        <div className="mobile-controls">
+          <button 
+            onClick={toggleTheme} 
+            className="theme-toggle mobile-theme-toggle" 
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+          <button 
+            className="mobile-toggle" 
+            onClick={toggleMenu} 
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+
+        {/* Mobile Nav Overlay */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div 
+              className="mobile-nav glass-panel"
+              initial={{ opacity: 0, y: -15, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -15, scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+            >
+              {navLinks.map((link) => (
+                <a 
+                  key={link.id} 
+                  href={link.href} 
+                  className={`mobile-link ${activeSection === link.id ? 'active' : ''}`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.highlight && <Sparkles size={14} className="research-sparkle" />}
+                  <span>{link.name}</span>
+                </a>
+              ))}
               <a 
-                key={index} 
-                href={link.href} 
-                className="nav-link mobile-link"
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="btn btn-sm btn-primary mobile-resume-btn"
                 onClick={() => setIsOpen(false)}
               >
-                {link.name}
+                <FileText size={15} />
+                <span>View Resume (PDF)</span>
               </a>
-            ))}
-          </motion.div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </nav>
+    </header>
   );
 };
 

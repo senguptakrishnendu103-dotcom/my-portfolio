@@ -2,12 +2,62 @@
   position: relative;
 }
 
-.text-center {
-  text-align: center;
+.about-header {
+  margin-bottom: 3.5rem;
 }
 
-.about-header {
-  margin-bottom: 4rem;
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.about-stat-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.about-stat-card:hover {
+  border-color: var(--glass-border-hover);
+}
+
+.stat-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.1;
+  font-family: 'Outfit', sans-serif;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 0.2rem;
+}
+
+.stat-detail {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 .about-grid {
@@ -19,10 +69,16 @@
 
 .about-content {
   padding: 2.5rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
   color: var(--text-secondary);
 }
 
+.about-content p {
+  white-space: pre-line;
+}
+
+/* ─── SKILLS SECTION (KEPT EXACTLY AS IT IS - DO NOT MODIFY) ─── */
 .skills-container {
   padding: 1rem;
 }
@@ -54,10 +110,12 @@
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.02);
 }
+
 .learning-tag:hover {
   color: var(--text-primary);
   border-color: rgba(255, 255, 255, 0.2);
 }
+/* ────────────────────────────────────────────────────────────── */
 
 @media (max-width: 992px) {
   .about-grid {
@@ -67,6 +125,6 @@
 
 @media (max-width: 768px) {
   .about-content {
-    padding: 1.5rem;
+    padding: 1.75rem;
   }
 }

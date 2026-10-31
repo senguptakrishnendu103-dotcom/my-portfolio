@@ -1,13 +1,12 @@
 export const portfolioData = {
   personal: {
     name: "Krishnendu Sengupta",
-    title: "IT Undergrad | Data Science | Business Analytics | AI/ML Enthusiast",
-    description: "I'm an IT undergraduate at Techno Main – Salt Lake, Kolkata, driven by an insatiable curiosity for Data Science, Business Analytics, and AI/ML. I believe in the power of data to transform decisions and build intelligent solutions. I leverage cutting-edge AI-assisted development to rapidly turn ideas into reality — constantly learning, building, and pushing boundaries.",
+    title: "IT Undergrad | Aspiring AI/ML & Data Science Researcher | Builder",
+    description: "IT undergraduate at Techno Main – Salt Lake, Kolkata, driven by a deep curiosity for Data Science, AI/ML, and Remote Sensing. An aspiring researcher eager to learn, experiment, and contribute to solving real-world challenges through innovative data-driven systems.",
     location: "Kolkata, West Bengal, India",
-    email: "hello@example.com", 
-    // Add your photo in the public or src/assets folder and path it here, 
-    // or provide an external URL. For now, using a cool placeholder.
+    email: "krishnendusengupta48@gmail.com",
     photo: "/profile.jpg",
+    status: "Open to Research Internships & Collaborations",
   },
   links: {
     github: "https://github.com/senguptakrishnendu103-dotcom",
@@ -17,6 +16,7 @@ export const portfolioData = {
   about: {
     title: "About Me",
     content: "As an IT undergraduate at Techno Main – Salt Lake, I am highly passionate about the intersection of data and intelligent systems. While my foundational strengths lie in Python, AI-assisted development, and analytical problem solving, I am on an active journey to learn and master Data Science, Business Analytics, and Machine Learning. I leverage modern AI tools to rapidly build and ship projects while continuously expanding my knowledge base. My ultimate goal is to evolve into a proficient Data Scientist and AI/ML Engineer who can translate complex data into actionable business strategies.",
+    // The skills section is kept EXACTLY as it is:
     skills: [
       "Python", "AI-Assisted Development", "Prompt Engineering", 
       "Research", "Problem Solving", "Adaptability"
@@ -24,25 +24,162 @@ export const portfolioData = {
     learning: [
       "Data Science", "Machine Learning", "Business Analytics", 
       "Financial Analytics", "Data Visualization", "AI/ML"
+    ],
+    stats: [
+      { label: "B.Tech IT", value: "8.45", detail: "Academic CGPA (TMSL)" },
+      { label: "Focus Domain", value: "AI/ML", detail: "Multimodal & Vision" },
+      { label: "Core Stack", value: "Python", detail: "Data Science & PyTorch" },
+      { label: "Exploration", value: "Research", detail: "Remote Sensing & Systems" }
     ]
   },
-  experience: [
+  research: {
+    badge: "Research & Exploration",
+    title: "Inquiry, Exploration & Experimentation",
+    tagline: "Bridging foundational computer science with applied machine learning to tackle complex societal challenges.",
+    philosophy: "As an aspiring researcher, I view every challenge as an opportunity to learn from first principles. I am fascinated by how emerging AI/ML models can interpret rich multimodal observations—from Earth-observing satellite passes to agricultural imagery. Rather than claiming established expertise, I bring an insatiable curiosity, strong mathematical enthusiasm, rapid prototyping capability, and an eagerness to collaborate under research mentorship.",
+    pillars: [
+      {
+        id: "remote-sensing",
+        title: "Multimodal Remote Sensing & Vision-Language AI",
+        category: "Earth Observation & Vision-Language",
+        description: "Exploring the fusion of satellite imagery (optical, multispectral, SAR) with natural language queries. Investigating cross-attention mechanisms to enable zero-shot geospatial question answering for disaster assessment and water resource monitoring.",
+        focusAreas: ["Vision Transformers (ViT)", "Remote Sensing VQA", "Geospatial Intelligence", "Multimodal Grounding"],
+        inquiry: "How can multimodal vision-language architectures reliably ground natural language inquiries on high-resolution Earth observation data for real-time disaster management?",
+        status: "Active Exploration (SatQuery AI)",
+      },
+      {
+        id: "applied-cv-agro",
+        title: "Applied Computer Vision for Agricultural Health",
+        category: "Deep Learning & Edge Diagnostics",
+        description: "Investigating convolutional neural networks and transfer learning models for early-stage foliar disease classification. Focused on lightweight model architectures that can operate under compute constraints in the field.",
+        focusAreas: ["Transfer Learning", "Convolutional Networks", "Plant Pathology Classification", "Accessible ML"],
+        inquiry: "How do data augmentation and domain adaptation techniques mitigate dataset scarcity in micro-climatic crop pathology?",
+        status: "Experimental Prototype",
+      },
+      {
+        id: "verifiable-systems",
+        title: "Decentralized State & Verifiable Systems",
+        category: "Distributed Trust & Blockchain",
+        description: "Examining tamper-proof state transitions and cryptographic verification in civic mechanisms like electronic voting. Investigating trade-offs between on-chain cryptographic proofs and cloud authentication.",
+        focusAreas: ["Solidity Smart Contracts", "State Immutability", "Cryptographic Verification", "Decentralized Governance"],
+        inquiry: "What architectural patterns best bridge user-friendly biometric authentication with zero-trust decentralized consensus?",
+        status: "Implemented & Tested (SecureVote)",
+      },
+      {
+        id: "data-analytics",
+        title: "Data Science & Decision Intelligence",
+        category: "Statistical Modeling & Analytics",
+        description: "Applying exploratory data analysis, statistical inferencing, and predictive modeling on high-dimensional datasets to discover latent correlations and generate reliable decision metrics.",
+        focusAreas: ["Feature Engineering", "Time-Series Signals", "Business Analytics", "Predictive Modeling"],
+        inquiry: "How can exploratory statistical pipelines be standardized to reliably transform noisy business indicators into predictive foresight?",
+        status: "Continuous Learning",
+      }
+    ],
+    readingList: [
+      "Multimodal Foundation Models for Earth Observation & Remote Sensing",
+      "Parameter-Efficient Fine-Tuning (PEFT) & LoRA in Vision-Language Models",
+      "Attention Is All You Need & Vision Transformers (ViT) Architectures",
+      "Robustness & Generalization in Convolutional Networks for Diagnostic Imaging"
+    ]
+  },
+  achievements: [
     {
       id: 1,
-      title: "IT Undergraduate",
-      company: "Techno Main – Salt Lake",
-      period: "2025 - Present",
-      description: "Pursuing B.Tech in Information Technology. Focusing on Data Science, AI/ML fundamentals, algorithms, and building real-world projects that solve meaningful problems.",
+      title: "Academic Excellence — 8.45 CGPA",
+      organization: "Techno Main Salt Lake, Kolkata",
+      category: "Academics",
+      year: "2024 - 2026",
+      badge: "Graduating 2026",
+      description: "Pursuing B.Tech in Information Technology with consistent academic focus on Python, Data Handling, Algorithms, and Software Engineering. High School Class XII (WBCHSE) at Jodhpur Park Boys' School (86.4%).",
+      impact: "Strong analytical base in computer science principles and data manipulation."
     },
     {
       id: 2,
-      title: "Self-Employed / Freelance",
-      company: "Independent Projects",
-      period: "2025 - Present",
-      description: "Building data-driven applications and AI-powered tools. Participating in hackathons like Google Solution Challenge. Exploring research in financial analytics and business intelligence.",
+      title: "Hack2skill: Solution Challenge 2026 — Build with AI",
+      organization: "Hack2skill / Google Cloud Developer Ecosystem",
+      category: "Innovation",
+      year: "2026",
+      badge: "Certified",
+      description: "Earned certificate for demonstrating applied AI problem-solving in the Solution Challenge 2026 Build with AI track, building real-world solutions for social good.",
+      impact: "Demonstrated skills in generative AI and rapid solution architecture."
+    },
+    {
+      id: 3,
+      title: "Hack2skill: Build with AI Bootcamp Kolkata",
+      organization: "Hack2skill Developer Community",
+      category: "Innovation",
+      year: "2026",
+      badge: "Bootcamp",
+      description: "Completed intensive Build with AI Bootcamp in Kolkata, developing hands-on competence with modern AI frameworks, prompt engineering, and intelligent application deployment.",
+      impact: "Collaborated with regional AI developers on cutting-edge machine learning tools."
     }
   ],
-  // Projects are now managed dynamically via Firebase Firestore.
-  // Navigate to /admin to add, edit, or delete projects.
+  experience: [
+    {
+      id: 1,
+      title: "IT Undergraduate & Aspiring Researcher",
+      company: "Techno Main – Salt Lake",
+      period: "2025 - Present",
+      description: "Pursuing B.Tech in Information Technology. Focusing on Data Science, AI/ML fundamentals, remote sensing concepts, algorithms, and building real-world projects that solve meaningful problems.",
+    },
+    {
+      id: 2,
+      title: "Independent Developer & Project Builder",
+      company: "Open Source & Academic Projects",
+      period: "2025 - Present",
+      description: "Building data-driven applications and AI-powered tools. Exploring multimodal remote sensing through SatQuery AI, decentralized systems with SecureVote, and machine learning models for real-world diagnostics.",
+    }
+  ],
+  // Fallback projects shown when Firebase has no documents or during initial fetch:
+  defaultProjects: [
+    {
+      id: "satquery-ai",
+      title: "SatQuery AI",
+      category: "AI & Research",
+      tagline: "Multimodal Remote Sensing Vision-Language Assistant",
+      description: "An interactive vision-language system that analyzes multimodal Earth observation & satellite imagery through natural language text queries. Designed for disaster management, flood extent mapping, and water resource monitoring.",
+      technologies: ["Python", "PyTorch", "Vision Transformers", "FastAPI", "React", "GeoJSON"],
+      github: "https://github.com/senguptakrishnendu103-dotcom",
+      link: "",
+      featured: true,
+      badge: "Research Prototype"
+    },
+    {
+      id: "securevote",
+      title: "SecureVote",
+      category: "Blockchain & Web3",
+      tagline: "Decentralized Blockchain-Based Voting Platform",
+      description: "A tamper-proof voting system combining Ethereum smart contracts (Solidity/Hardhat) for immutable vote recording with Google Firebase for secure voter identity authentication and real-time analytics.",
+      technologies: ["Solidity", "Hardhat", "Ethers.js", "Firebase", "React", "Chart.js"],
+      github: "https://github.com/senguptakrishnendu103-dotcom",
+      link: "",
+      featured: true,
+      badge: "Web3 Innovation"
+    },
+    {
+      id: "crop-disease-detector",
+      title: "AgriVision: Crop Disease Detector",
+      category: "AI & Research",
+      tagline: "Deep Learning Agricultural Pathology Classifier",
+      description: "An automated computer vision diagnostics pipeline utilizing deep convolutional networks to identify plant leaf diseases from field photographs, providing actionable treatment recommendations.",
+      technologies: ["Python", "TensorFlow/Keras", "OpenCV", "FastAPI", "React"],
+      github: "https://github.com/senguptakrishnendu103-dotcom",
+      link: "",
+      featured: false,
+      badge: "Deep Learning"
+    },
+    {
+      id: "resqnet",
+      title: "ResQnet",
+      category: "Full Stack",
+      tagline: "Emergency Response & Disaster Coordination Network",
+      description: "A resilient crisis response platform facilitating rapid peer-to-peer reporting, geo-tagged incident clustering, and resource dispatch during extreme climatic disruptions.",
+      technologies: ["React", "Firebase Firestore", "Leaflet Maps", "Tailwind CSS"],
+      github: "https://github.com/senguptakrishnendu103-dotcom",
+      link: "",
+      featured: false,
+      badge: "Social Impact"
+    }
+  ],
   projects: []
 };
