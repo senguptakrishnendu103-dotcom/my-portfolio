@@ -2,11 +2,11 @@ export const portfolioData = {
   personal: {
     name: "Krishnendu Sengupta",
     title: "IT Undergrad | Aspiring AI/ML & Data Science Researcher | Builder",
-    description: "IT undergraduate at Techno Main – Salt Lake, Kolkata, driven by a deep curiosity for Data Science, AI/ML, and Remote Sensing. An aspiring researcher eager to learn, experiment, and contribute to solving real-world challenges through innovative data-driven systems.",
+    description: "IT undergraduate at Techno Main – Salt Lake, Kolkata, driven by a deep curiosity for Artificial Intelligence, Machine Learning, and Data Science. An aspiring researcher eager to learn, experiment, and contribute to solving real-world challenges through intelligent systems.",
     location: "Kolkata, West Bengal, India",
     email: "krishnendusengupta48@gmail.com",
     photo: "/profile.jpg",
-    status: "Open to Research Internships & Collaborations",
+    status: "Open to AI/ML Research Internships & Collaborations",
   },
   links: {
     github: "https://github.com/senguptakrishnendu103-dotcom",
@@ -27,24 +27,24 @@ export const portfolioData = {
     ],
     stats: [
       { label: "B.Tech IT", value: "8.45", detail: "Academic CGPA (TMSL)" },
-      { label: "Focus Domain", value: "AI/ML", detail: "Multimodal & Vision" },
-      { label: "Core Stack", value: "Python", detail: "Data Science & PyTorch" },
-      { label: "Exploration", value: "Research", detail: "Remote Sensing & Systems" }
+      { label: "Focus Domain", value: "Data Science", detail: "Statistical Analytics & ML" },
+      { label: "Core Stack", value: "Python", detail: "PyTorch & Modern Stack" },
+      { label: "Exploration", value: "AI Systems", detail: "Deep Learning & Generative AI" }
     ]
   },
   research: {
     badge: "Research & Exploration",
     title: "Inquiry, Exploration & Experimentation",
     tagline: "Bridging foundational computer science with applied machine learning to tackle complex societal challenges.",
-    philosophy: "As an aspiring researcher, I view every challenge as an opportunity to learn from first principles. I am fascinated by how emerging AI/ML models can interpret rich multimodal observations—from Earth-observing satellite passes to agricultural imagery. Rather than claiming established expertise, I bring an insatiable curiosity, strong mathematical enthusiasm, rapid prototyping capability, and an eagerness to collaborate under research mentorship.",
+    philosophy: "As an aspiring researcher, I view every challenge as an opportunity to learn from first principles. I am fascinated by how emerging AI/ML models can interpret rich multimodal observations—from deep visual representations to complex structured data. Rather than claiming established expertise, I bring an insatiable curiosity, strong mathematical enthusiasm, rapid prototyping capability, and an eagerness to collaborate under research mentorship.",
     pillars: [
       {
-        id: "remote-sensing",
-        title: "Multimodal Remote Sensing & Vision-Language AI",
-        category: "Earth Observation & Vision-Language",
-        description: "Exploring the fusion of satellite imagery (optical, multispectral, SAR) with natural language queries. Investigating cross-attention mechanisms to enable zero-shot geospatial question answering for disaster assessment and water resource monitoring.",
-        focusAreas: ["Vision Transformers (ViT)", "Remote Sensing VQA", "Geospatial Intelligence", "Multimodal Grounding"],
-        inquiry: "How can multimodal vision-language architectures reliably ground natural language inquiries on high-resolution Earth observation data for real-time disaster management?",
+        id: "multimodal-ai",
+        title: "Multimodal AI & Vision-Language Systems",
+        category: "Deep Learning & Vision-Language",
+        description: "Exploring the fusion of visual perception with natural language queries. Investigating cross-attention mechanisms, vision transformers, and multimodal embeddings to enable intelligent visual reasoning and contextual question answering.",
+        focusAreas: ["Vision Transformers (ViT)", "Vision-Language Grounding", "Multimodal Alignment", "Parameter-Efficient Tuning"],
+        inquiry: "How can multimodal vision-language architectures reliably ground natural language inquiries on complex visual data for real-world decision making?",
         status: "Active Exploration (SatQuery AI)",
       },
       {
@@ -76,7 +76,7 @@ export const portfolioData = {
       }
     ],
     readingList: [
-      "Multimodal Foundation Models for Earth Observation & Remote Sensing",
+      "Multimodal Foundation Models & Vision-Language Representation",
       "Parameter-Efficient Fine-Tuning (PEFT) & LoRA in Vision-Language Models",
       "Attention Is All You Need & Vision Transformers (ViT) Architectures",
       "Robustness & Generalization in Convolutional Networks for Diagnostic Imaging"
@@ -120,14 +120,14 @@ export const portfolioData = {
       title: "IT Undergraduate & Aspiring Researcher",
       company: "Techno Main – Salt Lake",
       period: "2025 - Present",
-      description: "Pursuing B.Tech in Information Technology. Focusing on Data Science, AI/ML fundamentals, remote sensing concepts, algorithms, and building real-world projects that solve meaningful problems.",
+      description: "Pursuing B.Tech in Information Technology. Focusing on Data Science, AI/ML fundamentals, intelligent systems, algorithms, and building real-world projects that solve meaningful problems.",
     },
     {
       id: 2,
       title: "Independent Developer & Project Builder",
       company: "Open Source & Academic Projects",
       period: "2025 - Present",
-      description: "Building data-driven applications and AI-powered tools. Exploring multimodal remote sensing through SatQuery AI, decentralized systems with SecureVote, and machine learning models for real-world diagnostics.",
+      description: "Building data-driven applications and AI-powered tools. Exploring deep learning architectures, intelligent systems with SecureVote, and machine learning models for real-world diagnostics.",
     }
   ],
   // Fallback projects shown when Firebase has no documents or during initial fetch:
@@ -136,8 +136,8 @@ export const portfolioData = {
       id: "satquery-ai",
       title: "SatQuery AI",
       category: "AI & Research",
-      tagline: "Multimodal Remote Sensing Vision-Language Assistant",
-      description: "An interactive vision-language system that analyzes multimodal Earth observation & satellite imagery through natural language text queries. Designed for disaster management, flood extent mapping, and water resource monitoring.",
+      tagline: "Multimodal Vision-Language AI Assistant",
+      description: "An interactive vision-language system that analyzes visual data through natural language text queries using deep learning and transformer models.",
       technologies: ["Python", "PyTorch", "Vision Transformers", "FastAPI", "React", "GeoJSON"],
       github: "https://github.com/senguptakrishnendu103-dotcom",
       link: "",

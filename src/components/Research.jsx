@@ -183,7 +183,7 @@ const Research = () => {
           <div className="collab-content">
             <h4 className="collab-title">Open for Research Internships & Academic Collaborations</h4>
             <p className="collab-text">
-              If you are a professor, researcher, or fellow student working on multimodal AI, remote sensing, or applied machine learning, I would be thrilled to connect, learn, and contribute to your lab's mission.
+              If you are a professor, researcher, or fellow student working on multimodal AI, deep learning, or applied machine learning, I would be thrilled to connect, learn, and contribute to your lab's mission.
             </p>
           </div>
           <a href="#contact" className="btn btn-primary collab-btn">

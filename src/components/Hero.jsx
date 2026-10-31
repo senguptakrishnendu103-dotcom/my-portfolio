@@ -118,7 +118,7 @@ const Hero = () => {
           >
             <Terminal size={14} className="terminal-icon" />
             <span className="terminal-text">
-              focus: <span className="highlight-text">Multimodal Remote Sensing · AI/ML · Data Science</span>
+              focus: <span className="highlight-text">Artificial Intelligence · Deep Learning · Data Science</span>
             </span>
           </motion.div>
         </motion.div>

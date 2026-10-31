@@ -63,7 +63,7 @@ const Projects = () => {
             Featured Projects <span className="text-gradient">.</span>
           </h2>
           <p className="section-subtitle">
-            A curated portfolio of AI systems, remote sensing tools, and full-stack software built to solve tangible problems.
+            A curated portfolio of AI systems, data-driven applications, and full-stack software built to solve tangible problems.
           </p>
         </motion.div>
 

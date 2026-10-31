@@ -38,7 +38,7 @@ const Footer = () => {
               {name.split(' ')[0]}<span className="text-gradient">.</span>
             </span>
             <p className="footer-tagline">
-              Aspiring AI/ML & Remote Sensing Researcher · Data Science · Full-Stack Builder
+              Aspiring AI/ML & Data Science Researcher · Intelligent Systems · Full-Stack Builder
             </p>
           </div>
 
