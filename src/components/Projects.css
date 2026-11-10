@@ -38,7 +38,7 @@
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 15px rgba(217, 91, 62, 0.4);
 }
 
 /* ─── Projects Grid ───────────────────────────────────── */
@@ -59,12 +59,12 @@
 }
 
 .project-card:hover {
-  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.18);
-  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 16px 40px rgba(217, 91, 62, 0.2);
+  border-color: rgba(217, 91, 62, 0.4);
 }
 
 .project-card-featured {
-  border-color: rgba(6, 182, 212, 0.3);
+  border-color: rgba(240, 160, 75, 0.4);
 }
 
 .project-top-bar {
@@ -82,9 +82,9 @@
   font-weight: 700;
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
-  background: rgba(6, 182, 212, 0.15);
-  border: 1px solid rgba(6, 182, 212, 0.35);
-  color: var(--accent-cyan);
+  background: rgba(240, 160, 75, 0.15);
+  border: 1px solid rgba(240, 160, 75, 0.35);
+  color: var(--accent-tertiary);
 }
 
 .badge-regular {
@@ -121,7 +121,7 @@
 
 .project-link-icon:hover {
   color: var(--accent-primary);
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(217, 91, 62, 0.15);
   border-color: var(--accent-primary);
   transform: translateY(-2px);
 }
@@ -142,7 +142,7 @@
 .project-tagline {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
   margin-bottom: 0.85rem;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .read-more-btn:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
 }
 
 .project-footer {

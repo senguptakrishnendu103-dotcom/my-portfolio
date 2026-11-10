@@ -4,9 +4,9 @@
 }
 
 .research-badge {
-  background: rgba(6, 182, 212, 0.12);
-  border-color: rgba(6, 182, 212, 0.3);
-  color: var(--accent-cyan);
+  background: rgba(240, 160, 75, 0.12);
+  border-color: rgba(240, 160, 75, 0.3);
+  color: var(--accent-tertiary);
 }
 
 .research-header {
@@ -17,8 +17,8 @@
 .philosophy-card {
   padding: 2.25rem;
   margin-bottom: 3.5rem;
-  border-color: rgba(99, 102, 241, 0.25);
-  background: linear-gradient(135deg, rgba(15, 17, 26, 0.85) 0%, rgba(22, 25, 38, 0.6) 100%);
+  border-color: rgba(217, 91, 62, 0.25);
+  background: linear-gradient(135deg, rgba(18, 20, 26, 0.85) 0%, rgba(26, 29, 38, 0.6) 100%);
   position: relative;
 }
 
@@ -29,7 +29,7 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, var(--accent-cyan), var(--accent-primary));
+  background: linear-gradient(180deg, var(--accent-tertiary), var(--accent-primary));
 }
 
 .philosophy-header {
@@ -43,8 +43,8 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: rgba(6, 182, 212, 0.15);
-  color: var(--accent-cyan);
+  background: rgba(240, 160, 75, 0.15);
+  color: var(--accent-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
 }
 
 .philosophy-title {
@@ -131,13 +131,13 @@
 }
 
 .pillar-card:hover {
-  border-color: rgba(6, 182, 212, 0.4);
-  box-shadow: 0 12px 35px rgba(6, 182, 212, 0.12);
+  border-color: rgba(217, 91, 62, 0.4);
+  box-shadow: 0 12px 35px rgba(217, 91, 62, 0.15);
 }
 
 .pillar-active {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 25px rgba(6, 182, 212, 0.2);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 25px rgba(217, 91, 62, 0.25);
 }
 
 .pillar-top {
@@ -151,7 +151,7 @@
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(6, 182, 212, 0.12);
+  background: rgba(78, 154, 123, 0.15);
   color: var(--accent-cyan);
   display: flex;
   align-items: center;
@@ -163,9 +163,9 @@
   font-weight: 600;
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
-  background: rgba(99, 102, 241, 0.15);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: #a5b4fc;
+  background: rgba(217, 91, 62, 0.15);
+  border: 1px solid rgba(217, 91, 62, 0.3);
+  color: #f0a04b;
 }
 
 .pillar-category {
@@ -196,7 +196,7 @@
 /* Inquiry Box */
 .pillar-inquiry-box {
   background: rgba(0, 0, 0, 0.25);
-  border: 1px dashed rgba(6, 182, 212, 0.3);
+  border: 1px dashed rgba(240, 160, 75, 0.35);
   border-radius: var(--radius-sm);
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -209,7 +209,7 @@
   font-size: 0.775rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
   margin-bottom: 0.4rem;
 }
 
@@ -252,8 +252,8 @@
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(139, 92, 246, 0.15);
-  color: var(--accent-secondary);
+  background: rgba(217, 91, 62, 0.15);
+  color: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,7 +291,7 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--accent-secondary);
+  color: var(--accent-primary);
   margin-top: 0.1rem;
 }
 
@@ -308,8 +308,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0.08) 100%);
-  border-color: rgba(99, 102, 241, 0.3);
+  background: linear-gradient(135deg, rgba(217, 91, 62, 0.12) 0%, rgba(240, 160, 75, 0.08) 100%);
+  border-color: rgba(217, 91, 62, 0.3);
 }
 
 .collab-content {

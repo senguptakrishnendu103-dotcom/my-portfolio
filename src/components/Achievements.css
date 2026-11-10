@@ -21,8 +21,8 @@
 }
 
 .achievement-card:hover {
-  border-color: rgba(139, 92, 246, 0.35);
-  box-shadow: 0 12px 35px rgba(139, 92, 246, 0.12);
+  border-color: rgba(217, 91, 62, 0.4);
+  box-shadow: 0 12px 35px rgba(217, 91, 62, 0.15);
 }
 
 .achievement-top {
@@ -36,8 +36,8 @@
   width: 46px;
   height: 46px;
   border-radius: var(--radius-sm);
-  background: rgba(139, 92, 246, 0.12);
-  color: var(--accent-secondary);
+  background: rgba(240, 160, 75, 0.15);
+  color: var(--accent-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,9 +54,9 @@
   font-weight: 700;
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
-  background: rgba(99, 102, 241, 0.15);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: #a5b4fc;
+  background: rgba(217, 91, 62, 0.15);
+  border: 1px solid rgba(217, 91, 62, 0.3);
+  color: #f0a04b;
 }
 
 .achievement-year {

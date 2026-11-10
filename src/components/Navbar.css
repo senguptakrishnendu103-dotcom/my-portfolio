@@ -45,19 +45,19 @@
 
 .logo-text {
   font-weight: 800;
-  background: linear-gradient(135deg, #ffffff 40%, var(--accent-primary) 100%);
+  background: linear-gradient(135deg, #f7f3eb 40%, var(--accent-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 :root[data-theme='light'] .logo-text {
-  background: linear-gradient(135deg, #0f172a 40%, var(--accent-primary) 100%);
+  background: linear-gradient(135deg, #121316 40%, var(--accent-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .logo-dot {
-  color: var(--accent-cyan);
+  color: var(--accent-primary);
 }
 
 .nav-links {
@@ -96,7 +96,7 @@
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-cyan));
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary));
   transition: width 0.25s ease;
 }
 
@@ -106,15 +106,15 @@
 }
 
 .nav-link-research {
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
 }
 
 .nav-link-research:hover {
-  color: #38bdf8;
+  color: #f7b76d;
 }
 
 .research-sparkle {
-  color: var(--accent-cyan);
+  color: var(--accent-tertiary);
   animation: sparkleTwinkle 2.5s infinite ease-in-out;
 }
 
@@ -131,13 +131,13 @@
   border-radius: 9999px;
   font-size: 0.825rem;
   margin-left: 0.25rem;
-  border-color: rgba(99, 102, 241, 0.35);
+  border-color: rgba(217, 91, 62, 0.35);
   color: #ffffff;
 }
 
 .nav-resume-btn:hover {
   border-color: var(--accent-primary);
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(217, 91, 62, 0.2);
 }
 
 .mobile-resume-btn {
