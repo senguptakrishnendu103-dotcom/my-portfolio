@@ -52,7 +52,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Portfolio theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin" element={<AdminPanel theme={theme} toggleTheme={toggleTheme} />} />
       </Routes>
     </Router>
   );

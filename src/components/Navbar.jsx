@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun, Sparkles, FileText } from 'lucide-react';
+import { Menu, X, Sparkles, FileText } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
+import BB8Toggle from './BB8Toggle';
 import './Navbar.css';
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -81,25 +82,25 @@ const Navbar = ({ theme, toggleTheme }) => {
             <span>Resume</span>
           </a>
           
-          <button 
-            onClick={toggleTheme} 
-            className="theme-toggle" 
-            aria-label="Toggle theme"
-            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-          >
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          <BB8Toggle
+            id="desktop-bb8-theme-toggle"
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+            size={5.2}
+            className="nav-bb8-toggle"
+            ariaLabel="Toggle Dark and Light mode"
+          />
         </nav>
 
         {/* Mobile Controls */}
         <div className="mobile-controls">
-          <button 
-            onClick={toggleTheme} 
-            className="theme-toggle mobile-theme-toggle" 
-            aria-label="Toggle theme"
-          >
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          <BB8Toggle
+            id="mobile-header-bb8-theme-toggle"
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+            size={4.6}
+            ariaLabel="Toggle Dark and Light mode"
+          />
           <button 
             className="mobile-toggle" 
             onClick={toggleMenu} 
@@ -140,6 +141,19 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <FileText size={15} />
                 <span>View Resume (PDF)</span>
               </a>
+
+              <div className="mobile-theme-row">
+                <span className="mobile-theme-label">
+                  Theme: <strong>{theme === 'dark' ? 'Night (Dark)' : 'Day (Light)'}</strong>
+                </span>
+                <BB8Toggle
+                  id="mobile-drawer-bb8-theme-toggle"
+                  checked={theme === 'dark'}
+                  onChange={toggleTheme}
+                  size={5.8}
+                  ariaLabel="Toggle theme"
+                />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>

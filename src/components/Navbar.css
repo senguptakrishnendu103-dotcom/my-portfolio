@@ -146,6 +146,29 @@
   justify-content: center;
 }
 
+.nav-bb8-toggle {
+  margin-left: 0.6rem;
+  flex-shrink: 0;
+}
+
+.mobile-theme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0.25rem 0.25rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-theme-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.mobile-theme-label strong {
+  color: var(--accent-primary);
+}
+
 .theme-toggle {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--glass-border);

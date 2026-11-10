@@ -27,6 +27,7 @@ import {
 } from 'lucide-react';
 import { auth, googleProvider, db } from '../firebase';
 import { useProjects } from '../hooks/useProjects';
+import BB8Toggle from './BB8Toggle';
 import './AdminPanel.css';
 
 const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL;
@@ -39,7 +40,7 @@ const emptyForm = {
   github: '',
 };
 
-const AdminPanel = () => {
+const AdminPanel = ({ theme, toggleTheme }) => {
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
   const [formData, setFormData] = useState(emptyForm);
@@ -311,6 +312,15 @@ const AdminPanel = () => {
               />
               <span className="admin-user-name">{user.displayName}</span>
             </div>
+            {toggleTheme && (
+              <BB8Toggle
+                id="admin-bb8-theme-toggle"
+                checked={theme === 'dark'}
+                onChange={toggleTheme}
+                size={4.8}
+                ariaLabel="Toggle theme in Admin Panel"
+              />
+            )}
             <button
               className="btn-ghost"
               onClick={handleSignOut}
