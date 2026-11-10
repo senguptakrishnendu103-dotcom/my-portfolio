@@ -120,11 +120,40 @@
 @media (max-width: 992px) {
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .about-content {
     padding: 1.75rem;
+  }
+  .about-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .about-stat-card {
+    padding: 1.1rem;
+    gap: 1rem;
+  }
+  .about-content {
+    padding: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .skills-tags {
+    gap: 0.6rem;
+  }
+  .skill-tag {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
   }
 }

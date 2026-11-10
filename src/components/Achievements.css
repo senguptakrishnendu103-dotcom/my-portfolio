@@ -121,9 +121,34 @@
 @media (max-width: 768px) {
   .achievements-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .achievement-card {
-    padding: 1.75rem;
+    padding: 1.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-grid {
+    gap: 1.15rem;
+  }
+
+  .achievement-card {
+    padding: 1.25rem;
+  }
+
+  .achievement-title {
+    font-size: 1.1rem;
+  }
+
+  .achievement-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .achievement-impact {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.8rem;
   }
 }

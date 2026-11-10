@@ -120,3 +120,42 @@
     padding: 1.65rem;
   }
 }
+
+@media (max-width: 480px) {
+  .timeline-line {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: 1px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-dot-inner {
+    width: 6px;
+    height: 6px;
+  }
+
+  .timeline-item {
+    padding-left: 30px;
+    margin-bottom: 1.75rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .timeline-company {
+    font-size: 0.88rem;
+  }
+
+  .timeline-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+}
